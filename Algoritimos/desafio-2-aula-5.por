@@ -28,16 +28,16 @@ programa
 			escreva("\nVocê está no peso ideal")
 		} senao se  (imc > 25 e imc <= 30){
 			escreva("\nVocê está sobrepeso")
-			escreva("\nVocê deve emagrecer: ", (imc - 25) * (altura * altura), "Kg")
+			escreva("\nVocê deve emagrecer: ", (imc - 24) * (altura * altura), "Kg")
 		} senao se  (imc > 30 e imc <= 35){
 			escreva("\nVocê está com o grau de obesidade 1")
-			escreva("\nVocê deve emagrecer: ", (imc - 25) * (altura * altura), "Kg")
+			escreva("\nVocê deve emagrecer: ", (imc - 24) * (altura * altura), "Kg")
 		} senao se  (imc > 35 e imc <= 40){
 			escreva("\nVocê está com o grau de obesidade 2")
-			escreva("\nVocê deve emagrecer: ", (imc - 25) * (altura * altura), "Kg")
+			escreva("\nVocê deve emagrecer: ", (imc - 24) * (altura * altura), "Kg")
 		} senao se  (imc > 40){
 			escreva("\nVocê está com o grau de obesidade 3")
-			escreva("\nVocê deve emagrecer: ", (imc - 25) * (altura * altura), "Kg")
+			escreva("\nVocê deve emagrecer: ", (imc - 24) * (altura * altura), "Kg")
 		}	
 	}
 }
@@ -46,7 +46,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 828; 
+ * @POSICAO-CURSOR = 1398; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
