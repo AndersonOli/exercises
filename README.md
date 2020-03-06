@@ -1,0 +1,3 @@
+# exercises
+
+For general purpose
