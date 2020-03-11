@@ -1,0 +1,35 @@
+# Equipe: Ailson da Silva Azevedo
+# ------- Anderson Felipe Oliveira 
+
+programa {
+	funcao inicio() {
+		real x, y, z
+		//x= a, y=b, z=c
+    	escreva("Escreva o lado X do trinagulo: ")
+    	leia(x)
+    	escreva("Escreva o lado Y do trinagulo: ")
+    	leia(y)
+    	escreva("Escreva o lado Z do trinagulo: ")
+    	leia(z)
+    	se (((x+y)<z) ou ((x+z)<y) ou ((y+z)<z))
+    	{
+    	    escreva("O triangulo existe \n")
+    	    se (x!=y e y!=z e x!=z)
+    	    {
+                escreva("O triangulo é escaleno!")	    
+    	    }
+    	    senao se (x==y ou y==z ou x==z)
+    	    {
+                escreva("O triangulo é isóceles!")	    
+    	    }
+    	    senao se (x==y e y==z e x==z)
+    	    {
+                escreva("O triangulo é equilátero!")	    
+    	    }
+    	}
+    	senao
+    	{
+    	    escreva("o triangulo não existe!")
+    	}
+    }
+}
