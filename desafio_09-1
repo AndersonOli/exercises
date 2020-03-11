@@ -1,0 +1,61 @@
+# Equipe: Ailson da Silva Azevedo
+# ------- Anderson Felipe Oliveira 
+
+import os
+
+#Função para calcular o imposto
+def Imposto(salario_bruto):
+  if(salario_bruto < 1200.0):
+    imposto = salario_bruto * 0.08
+    print("\nVocê pagará: R$", imposto, "reais de imposto.\nSeu salário liquido é R$", salario_bruto - imposto)
+  elif(salario_bruto >= 1200.0 and salario_bruto < 3000.0):
+    imposto = salario_bruto * 0.10
+    print("\nVocê pagará: R$", imposto, "reais de imposto.\nSeu salário liquido é R$", salario_bruto - imposto)
+  elif(salario_bruto >= 3000.0 and salario_bruto < 5000.0):
+    imposto = salario_bruto * 0.12
+    print("\nVocê pagará: R$", imposto, "reais de imposto.\nSeu salário liquido é R$", salario_bruto - imposto)
+  else:
+    print("\nVocê pagará: R$680.0 reais de imposto\nSeu salário liquido é R$", salario_bruto - 680.0)
+
+
+#Função para calcular o aumento no salário
+def Aumento(salario_antigo):
+  if(salario_antigo < 1200.0):
+    aumento = 500
+    print("\nVocê receberá um aumento de R$", aumento, "\nSeu novo salário é R$", salario_antigo + aumento)
+  elif(salario_antigo >= 1200.0 and salario_antigo < 3000.0):
+    aumento = 400
+    print("\nVocê receberá um aumento de R$", aumento, "\nSeu novo salário é R$", salario_antigo + aumento)
+  elif(salario_antigo >= 3000.0 and salario_antigo < 5000.0):
+    aumento = 300
+    print("\nVocê receberá um aumento de R$", aumento, "\nSeu novo salário é R$", salario_antigo + aumento)
+  else:
+    aumento = 200
+    print("\nVocê receberá um aumento de R$", aumento, "\nSeu novo salário é R$", salario_antigo + aumento)
+
+def Classe(salario):
+  if(salario < 3000):
+    print("Você pertence ao Grupo 1")
+  elif(salario >= 3000 and salario < 5000):
+    print("Você pertence ao Grupo 2")
+  else:
+    print("Você pertence ao Grupo 3")
+
+print("Menu de opções: \n1. Imposto\n2. Novo salário\n3. Classificação\n\n");
+
+opcao = int(input("Informe a opção desejada: "))
+
+#Limpa a tela
+os.system('clear')
+
+if(opcao == 1):
+  salario_bruto = float(input("Informe o valor do seu salário bruto: "))
+  Imposto(salario_bruto)
+elif(opcao == 2):
+  salario_antigo = float(input("Informe o valor do seu salário: "))
+  Aumento(salario_antigo)
+elif(opcao == 3):
+  salario = float(input("Informe o valor do seu salário: "))
+  Classe(salario)
+else:
+  print("Essa opção ainda não existe! Tente outra :)")
